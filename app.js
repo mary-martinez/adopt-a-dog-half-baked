@@ -3,7 +3,7 @@ import { renderDogCard } from './render-utils.js';
 
 const dogListContainer = document.getElementById('dog-list-container');
 
-window.addEventListener('load', async () => {
+window.addEventListener('load', async() => {
     const dogList = await getDogs();
     dogListContainer.textContent = '';
 

@@ -3,7 +3,7 @@ import { renderDogDetail } from '../render-utils.js';
 
 const dogDetailContainer = document.getElementById('dog-detail-container');
 
-window.addEventListener('load', async () => {
+window.addEventListener('load', async() => {
     const params = new URLSearchParams(window.location.search);
     const selectedDog = await getDog(params.get('id'));
     const showDog = renderDogDetail(selectedDog);
