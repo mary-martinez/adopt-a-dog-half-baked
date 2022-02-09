@@ -9,4 +9,4 @@ window.addEventListener('load', async () => {
     const showDog = renderDogDetail(selectedDog);
     dogDetailContainer.append(showDog);
 
-})
+});
